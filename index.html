@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Paróquia Nossa Senhora Aparecida - Rocinha RJ</title>
+
+  <meta
+    name="description"
+    content="Portal informativo acessível da Paróquia Nossa Senhora Aparecida, na Rocinha - RJ, com horários, agenda, projetos sociais, localização, acessibilidade e cadastro de voluntariado."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Menu principal">
+      <a href="#inicio" class="brand" aria-label="Início do portal da Paróquia Nossa Senhora Aparecida">
+        <svg class="brand-logo" viewBox="0 0 120 120" role="img" aria-labelledby="logoTitle logoDesc">
+          <title id="logoTitle">Logo estilizada da Paróquia Nossa Senhora Aparecida</title>
+          <desc id="logoDesc">
+            Símbolo com sol dourado, arco azul escuro e casas azuis representando a comunidade.
+          </desc>
+
+          <circle cx="60" cy="29" r="24" fill="#F7BE16" />
+
+          <path
+            d="M18 93 L43 28 C49 13 71 13 77 28 L102 93 L86 93 L66 34 C63 25 57 25 54 34 L34 93 Z"
+            fill="#071B4D"
+          />
+
+          <path
+            d="M42 88 L55 39 C57 30 63 30 66 39 L79 88 Z"
+            fill="#0798C7"
+            stroke="#F7BE16"
+            stroke-width="5"
+            stroke-linejoin="round"
+          />
+
+          <path
+            d="M45 83 C46 68 57 63 60 76 C63 63 74 68 75 83"
+            fill="#0798C7"
+            stroke="#071B4D"
+            stroke-width="4"
+          />
+
+          <path d="M18 92 H102" stroke="#071B4D" stroke-width="6" />
+
+          <g fill="#0798C7" stroke="#071B4D" stroke-width="4" stroke-linejoin="round">
+            <path d="M13 91 L39 86 L52 94 L52 112 L13 112 Z" />
+            <path d="M42 88 L66 86 L82 94 L82 112 L42 112 Z" />
+            <path d="M76 90 L102 87 L112 95 L112 112 L76 112 Z" />
+          </g>
+
+          <g fill="#071B4D">
+            <rect x="23" y="98" width="10" height="14" />
+            <rect x="57" y="98" width="8" height="8" />
+            <rect x="89" y="98" width="10" height="14" />
+          </g>
+
+          <path d="M16 92 L40 88 M43 89 L65 87 M77 91 L101 88" stroke="#F7BE16" stroke-width="4" />
+        </svg>
+
+        <span class="brand-text">
+          <span>Paróquia</span>
+          <strong>Nossa Senhora Aparecida</strong>
+          <small>Rocinha - RJ</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menuPrincipal"
+      >
+        <span class="menu-icon" aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </button>
+
+      <ul class="menu" id="menuPrincipal">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Quem somos</a></li>
+        <li><a href="#horarios">Horários</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#projetos">Projetos sociais</a></li>
+        <li><a href="#acessibilidade">Acessibilidade</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Faça parte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="accessibility-toolbar" aria-label="Ferramentas de acessibilidade">
+    <button type="button" id="decreaseFont" aria-label="Diminuir tamanho da fonte">A-</button>
+    <button type="button" id="resetFont" aria-label="Restaurar tamanho da fonte">A</button>
+    <button type="button" id="increaseFont" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button type="button" id="darkModeToggle" aria-pressed="false">Modo escuro</button>
+    <button type="button" id="contrastToggle" aria-pressed="false">Alto contraste</button>
+  </aside>
+
+  <main id="conteudo-principal">
+    <section class="hero section" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Nossa comunidade de fé</p>
+
+        <h1>Paróquia Nossa Senhora Aparecida da Rocinha</h1>
+
+        <p>
+          Um espaço de fé, acolhimento e informação para moradores, frequentadores e famílias da comunidade.
+          Consulte horários, eventos, pastorais, ações sociais e formas de participar da vida paroquial.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#horarios" class="btn primary">Ver horários</a>
+          <a href="#agenda" class="btn secondary">Abrir agenda</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5521974206142&text&type=phone_number&app_absent=0&utm_source=ig"
+            class="btn whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir conversa no WhatsApp com a paróquia"
+          >
+            Falar pelo WhatsApp
+          </a>
+          <a href="#contato" class="btn ghost">Quero ajudar</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Aviso principal">
+        <span class="badge">Aviso importante</span>
+
+        <h2>Agenda paroquial disponível</h2>
+
+        <p>
+          Consulte missas, grupos de oração, catequese, ações sociais, bazar, rifas e eventos do calendário cristão
+          em um só lugar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section two-columns" id="sobre">
+  <div>
+    <p class="eyebrow">Nossa história</p>
+
+    <h2>Quem somos</h2>
+
+    <p>
+      A Paróquia Nossa Senhora Aparecida, localizada na Rocinha, no Rio de Janeiro, é um espaço de fé,
+      acolhimento, oração e participação comunitária. Ao longo de sua caminhada, a comunidade tem reunido
+      moradores, famílias, pastorais, grupos de oração e ações sociais que fortalecem a vida cristã e o cuidado
+      com o próximo.
+    </p>
+
+    <p>
+      No dia <strong>15 de fevereiro de 2025</strong>, a Comunidade Nossa Senhora Aparecida foi instituída como
+      Paróquia, marcando um momento muito especial para toda a comunidade da Rocinha. Essa nova etapa representa
+      crescimento, responsabilidade pastoral e renovação do compromisso de servir com fé, união e esperança.
+    </p>
+
+    <p>
+  A nova Paróquia também passou a contar com o perfil
+  <strong>@paroquiansaparecidarocinha</strong>, criado para aproximar ainda mais os fiéis, moradores e
+  frequentadores das informações paroquiais, celebrações, eventos e atividades comunitárias.
+</p>
+
+<div class="social-actions">
+  <a
+    href="https://www.instagram.com/paroquiansaparecidarocinha"
+    class="btn instagram"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir Instagram da Paróquia Nossa Senhora Aparecida da Rocinha"
+  >
+    Acessar Instagram da Paróquia
+  </a>
+</div>
+  </div>
+
+  <div class="info-box">
+    <h3>Celebramos 1 ano de Paróquia</h3>
+
+    <p>
+      Celebramos com imensa gratidão este primeiro ano de Paróquia: um ano de fé, união e muitas bênçãos
+      derramadas sobre nossa comunidade.
+    </p>
+
+    <p>
+      Com alegria, agradecemos ao nosso querido <strong>Padre David</strong> por todo o carinho, dedicação e amor
+      com que conduz a nossa Paróquia.
+    </p>
+
+    <p>
+      Que Deus continue abençoando sua missão, fortalecendo seus passos e renovando sua vocação a cada dia.
+      Somos gratos por tê-lo como pastor e guia da nossa comunidade. 💙
+    </p>
+  </div>
+</section>
+
+    <section class="section" id="horarios">
+      <p class="eyebrow">Informações práticas</p>
+
+      <h2>Horários de missas e secretaria</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Missas durante a semana</h3>
+          <p class="large-info">Segunda a sexta, às 19h</p>
+          <p>Informação organizada para facilitar a consulta dos frequentadores.</p>
+        </article>
+
+        <article class="card">
+          <h3>Missa de sábado</h3>
+          <p class="large-info">Sábado, às 17h</p>
+          <p>Horário de celebração no fim de semana.</p>
+        </article>
+
+        <article class="card">
+          <h3>Missas de domingo</h3>
+          <p class="large-info">Domingo, às 9h e 19h</p>
+          <p>Horários principais para moradores e visitantes.</p>
+        </article>
+
+        <article class="card">
+          <h3>Secretaria Paroquial</h3>
+          <ul class="simple-list">
+            <li>Segunda, quarta, quinta e sexta: 13h às 21h</li>
+            <li>Sábado: 08h às 17h</li>
+            <li>Terça-feira e domingo: sem atendimento</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section highlighted" id="agenda">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Programação da comunidade</p>
+          <h2>Agenda Paroquial e Comunitária</h2>
+        </div>
+
+        <p>
+          Filtre os eventos por categoria para encontrar rapidamente missas, encontros, formações, ações sociais,
+          atendimento da secretaria e datas litúrgicas.
+        </p>
+      </div>
+
+      <div class="filters" role="toolbar" aria-label="Filtros da agenda">
+        <button type="button" class="filter-button active" data-filter="Todos" aria-pressed="true">Todos</button>
+        <button type="button" class="filter-button" data-filter="Missas">Missas</button>
+        <button type="button" class="filter-button" data-filter="Oração">Oração</button>
+        <button type="button" class="filter-button" data-filter="Formação">Formação</button>
+        <button type="button" class="filter-button" data-filter="Social">Social</button>
+        <button type="button" class="filter-button" data-filter="Litúrgico">Litúrgico</button>
+        <button type="button" class="filter-button" data-filter="Secretaria">Secretaria</button>
+      </div>
+
+      <p id="eventsInfo" class="events-info" aria-live="polite"></p>
+
+      <div class="events-grid" id="eventsGrid"></div>
+    </section>
+
+    <section class="section" id="atividades">
+      <p class="eyebrow">Vida paroquial</p>
+
+      <h2>Pastorais e atividades</h2>
+
+      <div class="cards-grid">
+        <article class="card activity-card">
+          <h3>Catequese Infantil</h3>
+          <p>Formação cristã para crianças, com encontros organizados pela comunidade paroquial.</p>
+        </article>
+
+        <article class="card activity-card">
+          <h3>Crisma</h3>
+          <p>Encontros de preparação para jovens e adultos, fortalecendo a participação comunitária.</p>
+        </article>
+
+        <article class="card activity-card">
+          <h3>Terço dos Homens</h3>
+          <p>Momento semanal de oração e convivência, com informações disponíveis na agenda.</p>
+        </article>
+
+        <article class="card activity-card">
+          <h3>Coroinhas</h3>
+          <p>Atividade voltada à participação de crianças e adolescentes nas celebrações.</p>
+        </article>
+
+        <article class="card activity-card">
+          <h3>Batizados e Casamentos</h3>
+          <p>Informações iniciais para famílias que desejam procurar a secretaria paroquial.</p>
+        </article>
+
+        <article class="card activity-card">
+          <h3>Grupo de Oração</h3>
+          <p>Encontros de espiritualidade, acolhimento e fortalecimento da comunidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-columns" id="projetos">
+      <div>
+        <p class="eyebrow">Solidariedade e comunidade</p>
+
+        <h2>Projetos sociais e ações comunitárias</h2>
+
+        <p>
+          As ações sociais aproximam a paróquia dos moradores e ajudam a fortalecer a solidariedade,
+          o acolhimento e o cuidado com as famílias da comunidade.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-item">
+          <h3>Arrecadação de alimentos</h3>
+          <p>Campanhas para apoio a famílias em situação de vulnerabilidade.</p>
+        </article>
+
+        <article class="project-item">
+          <h3>Bazar e lojinha comunitária</h3>
+          <p>Venda solidária de roupas, objetos religiosos, comidas e itens doados.</p>
+        </article>
+
+        <article class="project-item">
+          <h3>Rifas e campanhas paroquiais</h3>
+          <p>Ações para arrecadar recursos e fortalecer iniciativas comunitárias.</p>
+        </article>
+
+        <article class="project-item">
+          <h3>Visitas e acolhimento</h3>
+          <p>Apoio espiritual e comunitário a idosos, famílias e pessoas que buscam orientação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accessibility-section" id="acessibilidade">
+      <p class="eyebrow">Acesso para todos</p>
+
+      <h2>Recursos de acessibilidade aplicados</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Texto simples</h3>
+          <p>As informações são apresentadas em linguagem direta e com organização visual clara.</p>
+        </article>
+
+        <article class="card">
+          <h3>Botões grandes</h3>
+          <p>Os principais atalhos usam botões visíveis para facilitar o uso em celulares.</p>
+        </article>
+
+        <article class="card">
+          <h3>Controle de fonte</h3>
+          <p>O usuário pode aumentar, diminuir ou restaurar o tamanho da fonte.</p>
+        </article>
+
+        <article class="card">
+          <h3>Modo escuro e alto contraste</h3>
+          <p>
+            O modo escuro melhora o conforto visual. O alto contraste aumenta a legibilidade para pessoas com maior
+            dificuldade de visão.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section two-columns" id="localizacao">
+      <div>
+        <p class="eyebrow">Como chegar</p>
+
+        <h2>Localização</h2>
+
+        <p>
+          Paróquia Nossa Senhora Aparecida — Rocinha, Rio de Janeiro - RJ.
+        </p>
+
+        <p>
+          O mapa abaixo ajuda moradores e visitantes a encontrarem a região da paróquia com mais facilidade.
+        </p>
+
+        <a
+          class="btn primary"
+          href="https://www.google.com/maps/search/Par%C3%B3quia+Nossa+Senhora+Aparecida+Rocinha+RJ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir localização no Google Maps
+        </a>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          class="map-frame"
+          title="Mapa da Paróquia Nossa Senhora Aparecida na Rocinha RJ"
+          src="https://www.google.com/maps?q=Par%C3%B3quia%20Nossa%20Senhora%20Aparecida%20Rocinha%20RJ&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <p class="eyebrow">Faça parte</p>
+
+      <h2>Cadastro rápido de voluntariado</h2>
+
+      <p>
+        Este formulário foi pensado para ser simples e acessível. A pessoa interessada pode deixar nome, telefone ou
+        WhatsApp e escolher como deseja ajudar nas ações da paróquia.
+      </p>
+
+      <div class="quick-contact">
+        <a
+          href="https://api.whatsapp.com/send/?phone=5521974206142&text&type=phone_number&app_absent=0&utm_source=ig"
+          class="btn whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Enviar mensagem pelo WhatsApp para fazer parte das ações da paróquia"
+        >
+          Enviar mensagem pelo WhatsApp
+        </a>
+      </div>
+
+      <form class="contact-form" id="volunteerForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="nome">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              autocomplete="name"
+              required
+              placeholder="Exemplo: Maria Silva"
+            />
+            <small class="error-message" id="nomeError"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="telefone">Telefone ou WhatsApp</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              placeholder="Exemplo: (21) 99999-9999"
+            />
+            <small class="error-message" id="telefoneError"></small>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="interesse">Como você deseja ajudar?</label>
+            <select id="interesse" name="interesse" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Arrecadação de alimentos">Arrecadação de alimentos</option>
+              <option value="Bazar e lojinha">Bazar e lojinha</option>
+              <option value="Rifas e campanhas">Rifas e campanhas</option>
+              <option value="Catequese ou formação">Catequese ou formação</option>
+              <option value="Acolhimento e visitas">Acolhimento e visitas</option>
+              <option value="Comunicação do portal">Comunicação do portal</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <small class="error-message" id="interesseError"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="disponibilidade">Melhor período</label>
+            <select id="disponibilidade" name="disponibilidade" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Manhã">Manhã</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noite">Noite</option>
+              <option value="Fim de semana">Fim de semana</option>
+              <option value="A combinar">A combinar</option>
+            </select>
+            <small class="error-message" id="disponibilidadeError"></small>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="observacao">Observação opcional</label>
+          <textarea
+            id="observacao"
+            name="observacao"
+            rows="5"
+            placeholder="Escreva uma observação, caso deseje."
+          ></textarea>
+          <small class="helper-message">
+            Este campo não é obrigatório. A pessoa pode se cadastrar mesmo sem escrever uma mensagem longa.
+          </small>
+        </div>
+
+        <button type="submit" class="btn primary">Registrar interesse</button>
+
+        <p class="form-status" id="volunteerStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img
+        src="imagens/logo-rodape-escura.png"
+        alt="Logo da Paróquia Nossa Senhora Aparecida - Rocinha RJ"
+        class="footer-logo"
+      />
+
+      <div class="footer-info">
+        <strong>Paróquia Nossa Senhora Aparecida</strong>
+        <span>Rocinha - RJ</span>
+        <p>
+          Horários de missas, agenda paroquial, pastorais, ações sociais,
+          localização e canais de participação da comunidade.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
