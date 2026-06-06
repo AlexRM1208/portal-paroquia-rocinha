@@ -1048,3 +1048,47 @@ body.high-contrast .btn.instagram {
   color: #000000;
   border-color: #ffff00;
 }
+
+@media (max-width: 680px) {
+  .highlighted {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .highlighted .section-heading {
+    gap: 16px;
+  }
+
+  .highlighted h2 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .highlighted p {
+    max-width: 100%;
+  }
+
+  .filters {
+    gap: 10px;
+  }
+
+  .filter-button {
+    padding: 10px 14px;
+  }
+
+  .events-grid {
+    width: 100%;
+  }
+
+  .event-card {
+    padding: 22px;
+  }
+  h2 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+  }
+  .accessibility-toolbar button {
+    padding: 8px 9px;
+    font-size: 0.9rem;
+  }
+}
