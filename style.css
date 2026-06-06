@@ -948,128 +948,42 @@ body.high-contrast textarea::placeholder {
 }
 
 @media (max-width: 680px) {
-  .navbar {
-    min-height: 78px;
-  }
-
-  .brand-logo {
-    width: 58px;
-    min-width: 58px;
-    height: 58px;
-  }
-
-  .brand-text strong {
-    font-size: 1rem;
-  }
-
-  .brand-text span,
-  .brand-text small {
-    font-size: 0.72rem;
-  }
-
-  .menu {
-    top: 82px;
-  }
-
-  .section {
-    padding: 48px 0;
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 34px;
-  }
-
-  .hero-content,
-  .hero-card {
-    border-radius: 24px;
-  }
-
-  .cards-grid,
-  .events-grid,
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .accessibility-toolbar {
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    justify-content: center;
-  }
-
-  .accessibility-toolbar button {
-    padding: 9px 10px;
-  }
-
-  .site-footer {
-  padding-bottom: 140px;
-}
-
-.footer-brand {
-  flex-direction: column;
-  text-align: center;
-}
-
-.footer-logo {
-  width: 230px;
-}
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .btn:hover {
-    transform: none;
-  }
-}
-
-.social-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.btn.instagram {
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-  color: #ffffff;
-  border-color: transparent;
-}
-
-.btn.instagram:hover {
-  filter: brightness(1.08);
-}
-
-body.high-contrast .btn.instagram {
-  background: #ffff00;
-  color: #000000;
-  border-color: #ffff00;
-}
-
-@media (max-width: 680px) {
-  .highlighted {
-    padding-left: 24px;
-    padding-right: 24px;
+  .highlighted.section {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 52px 24px !important;
+    overflow: hidden;
   }
 
   .highlighted .section-heading {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .highlighted h2 {
-    font-size: clamp(2rem, 9vw, 2.7rem);
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2rem, 8vw, 2.6rem);
+    line-height: 1.15;
     word-break: normal;
     overflow-wrap: break-word;
   }
 
   .highlighted p {
+    width: 100%;
     max-width: 100%;
   }
 
   .filters {
+    width: 100%;
+    max-width: 100%;
     gap: 10px;
   }
 
@@ -1077,18 +991,35 @@ body.high-contrast .btn.instagram {
     padding: 10px 14px;
   }
 
+  .events-info {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .events-grid {
     width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .event-card {
+    width: 100%;
     padding: 22px;
   }
+
   h2 {
     font-size: clamp(1.9rem, 8vw, 2.5rem);
   }
+
   .accessibility-toolbar button {
     padding: 8px 9px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .highlighted.section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
